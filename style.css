@@ -1,0 +1,211 @@
+/* For section
+
+    padding:2rem;
+    position:relative;
+    top:-25%;
+
+*/
+
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:inherit;
+    height:inherit;
+    
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+main{
+    
+    background-color: green;
+    min-height:50%;
+    
+}
+header,footer{
+    
+    background-color: red;
+    /*height:25%;*/
+    min-height:25%;
+    text-align: center;
+    overflow-y:hidden ; /* to hide margin-collapse from child positioning*/
+    
+}
+.edge-container{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+     /* align container due to height*/
+    
+}
+.project-container{
+    width:20%;
+    height:25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+.project-content{
+    display: flex;
+    flex-direction: column;
+    
+    gap:5px;
+
+}
+.project-header{
+    padding-right: 3rem;
+}
+footer .footer-icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1rem;
+    
+}
+.edge-container > *{
+    flex-basis: 50%;
+   
+}
+
+main p{
+    font-size: small;
+}
+main h4{
+    display:inline-block;
+}
+
+footer p, footer i{
+    display:inline-block;
+    font-size: medium;
+    color:white
+}
+footer>p:first-child{
+    width:30%;
+}
+
+.edge-container img{
+    /*max(109px,30%)*/
+    width:30%; /* apply 109px for smaller sizes*/
+    float:right;
+}
+.project-container img{
+    width:70%;
+}
+section{
+    width:90%;
+}
+header section,main .project-container{
+    
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: white;
+    text-align: center;
+    /*padding:5%;*/
+    
+}
+
+.project-header .project-icons{
+        float:right;
+}
+
+footer h2{
+    color:white;
+}
+
+footer ul{
+    margin-top:10px;
+}
+
+
+/*MAIN CONTENT*/
+
+/*MAIN CONTENT*/
+
+/*@media screen and (max-width:800px){
+    .edge-container{
+        align-items: flex-start;
+    }
+    section{
+        width:95%;
+    }*/
+
+   
+    
+
+/*
+@media screen and (max-width:500px){
+    
+    .edge-container > *{
+        flex-basis: 80%;
+       
+    }
+}*/
+
+
+/*figure,section,aside{
+    display:inline-block;
+}
+
+figure{
+    width:20%;
+    height:100%;
+}
+figcaption{
+    position:absolute;
+}
+img{
+    width:100%;
+    height:inherit;
+    
+}*/
+
+
+
+/*
+.edge-content{
+    width:70%;
+    padding:1rem;
+    background-color: brown;
+}
+
+section{
+    
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: white;
+    text-align: center;
+    margin-bottom:1rem; 
+}
+img{
+    width:100px;
+    height:20vh;
+    
+}
+section{
+    width:30%;
+}
+figure,section,aside{
+    display:inline-block;
+    overflow:hidden;
+}
+
+
+figcaption{
+    position: absolute;
+    top:2rem;
+}
+
+*/
+
+
