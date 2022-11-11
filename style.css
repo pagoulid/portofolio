@@ -1,25 +1,18 @@
-/* For section
-
-    padding:2rem;
-    position:relative;
-    top:-25%;
-
-*/
-
 
 *{
     margin:0;
     padding:0;
 }
+
 html{
     width:100%;
     height:100%;
 }
+
 body{
     width:inherit;
     height:inherit;
-    
-    
+  
 }
 
 ul{
@@ -35,21 +28,62 @@ main{
 header,footer{
     
     background-color: red;
-    /*height:25%;*/
     min-height:25%;
     text-align: center;
     overflow-y:hidden ; /* to hide margin-collapse from child positioning*/
     
 }
+
+header section,main .project-container{
+    
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: white;
+    text-align: center;
+}
+
+/* TOP-BOTTOM CONTAINERS*/
 .edge-container{
     width:70%;
     display: flex;
     justify-content: center;
     align-items:center;
+    margin:auto;
      /* align container due to height*/
     
 }
-.project-container{
+.edge-container img{
+
+    width:150px; 
+      
+}
+
+footer>.edge-container{
+    gap:2vw;
+}
+
+
+figure{
+    
+    position:relative;
+}
+figcaption{
+    
+    position:absolute;
+    font-size: medium;
+    color: white;
+}
+/* TOP-BOTTOM CONTAINERS*/
+
+/* MAIN CONTAINER*/
+main p{
+    font-size: small;
+}
+
+main h4{
+    display:inline-block;
+}
+
+main .project-container{
     width:20%;
     height:25vh;
     display: flex;
@@ -58,16 +92,29 @@ header,footer{
     align-items:center;
 
 }
-.project-content{
+
+.project-container img{
+    width:100%;
+}
+
+.project-container .project-content{
     display: flex;
     flex-direction: column;
     
     gap:5px;
 
 }
-.project-header{
+
+.project-content .project-header{
     padding-right: 3rem;
 }
+
+.project-header .project-icons{
+    float:right;
+}
+/* MAIN CONTAINER*/
+
+/*FOOTER*/
 footer .footer-icons{
     display:flex;
     flex-direction: row;
@@ -75,50 +122,16 @@ footer .footer-icons{
     gap:1rem;
     
 }
-.edge-container > *{
-    flex-basis: 50%;
-   
-}
 
-main p{
-    font-size: small;
-}
-main h4{
-    display:inline-block;
-}
+
+
 
 footer p, footer i{
     display:inline-block;
     font-size: medium;
-    color:white
-}
-footer>p:first-child{
-    width:30%;
+    color:white;
 }
 
-.edge-container img{
-    /*max(109px,30%)*/
-    width:30%; /* apply 109px for smaller sizes*/
-    float:right;
-}
-.project-container img{
-    width:70%;
-}
-section{
-    width:90%;
-}
-header section,main .project-container{
-    
-    box-shadow: 1px 1px 1px 1px black;
-    background-color: white;
-    text-align: center;
-    /*padding:5%;*/
-    
-}
-
-.project-header .project-icons{
-        float:right;
-}
 
 footer h2{
     color:white;
@@ -127,7 +140,39 @@ footer h2{
 footer ul{
     margin-top:10px;
 }
+/*FOOTER*/
 
+@media screen and (max-width:800px){
+     .edge-container img{
+        width:250px;
+    }
+
+    figcaption{
+        transform:translateX(15%);
+        
+    }
+
+    section{
+        padding:5vw;
+        margin-left:2px;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+    .edge-container{
+        flex-direction: column;
+        gap:5vw;   
+    }
+
+     .edge-container img{
+        width:180px; 
+    }
+    
+    section{
+        padding:2vw;  
+    }
+}
 
 /*MAIN CONTENT*/
 
