@@ -20,18 +20,17 @@ ul{
 }
 
 main{
-    
     background-color: green;
-    min-height:50%;
-    
+    min-height:50%;   
 }
+
 header,footer{
     
     background-color: red;
     min-height:25%;
     text-align: center;
     overflow-y:hidden ; /* to hide margin-collapse from child positioning*/
-    
+
 }
 
 header section,main .project-container{
@@ -63,11 +62,10 @@ footer>.edge-container{
 
 
 figure{
-    
     position:relative;
 }
+
 figcaption{
-    
     position:absolute;
     font-size: medium;
     color: white;
@@ -75,6 +73,7 @@ figcaption{
 /* TOP-BOTTOM CONTAINERS*/
 
 /* MAIN CONTAINER*/
+
 main p{
     font-size: small;
 }
@@ -83,14 +82,28 @@ main h4{
     display:inline-block;
 }
 
+main .main-container{
+    
+    display:grid;
+   grid-template-columns: repeat(3,25%);
+   gap:2vh;
+
+   padding-top:5vw;
+   padding-left:15vw;
+      
+}
+.main-grid-item{
+    width:100%;
+    min-width:200px;
+}
+
 main .project-container{
-    width:20%;
-    height:25vh;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-
+    
 }
 
 .project-container img{
@@ -100,13 +113,9 @@ main .project-container{
 .project-container .project-content{
     display: flex;
     flex-direction: column;
-    
-    gap:5px;
+    gap:1rem;
 
-}
-
-.project-content .project-header{
-    padding-right: 3rem;
+    padding:1rem;
 }
 
 .project-header .project-icons{
@@ -115,6 +124,7 @@ main .project-container{
 /* MAIN CONTAINER*/
 
 /*FOOTER*/
+
 footer .footer-icons{
     display:flex;
     flex-direction: row;
@@ -123,15 +133,11 @@ footer .footer-icons{
     
 }
 
-
-
-
 footer p, footer i{
     display:inline-block;
     font-size: medium;
     color:white;
 }
-
 
 footer h2{
     color:white;
@@ -142,20 +148,29 @@ footer ul{
 }
 /*FOOTER*/
 
+
+/*MEDIA QUERIES*/
 @media screen and (max-width:800px){
+
      .edge-container img{
         width:250px;
     }
 
     figcaption{
-        transform:translateX(15%);
-        
+        transform:translateX(15%); 
     }
 
     section{
         padding:5vw;
         margin-left:2px;
     }
+   
+    .main-grid-item{
+        grid-column:1;
+    }
+    
+    
+    
 }
 
 @media screen and (max-width:500px){
@@ -173,84 +188,4 @@ footer ul{
         padding:2vw;  
     }
 }
-
-/*MAIN CONTENT*/
-
-/*MAIN CONTENT*/
-
-/*@media screen and (max-width:800px){
-    .edge-container{
-        align-items: flex-start;
-    }
-    section{
-        width:95%;
-    }*/
-
-   
-    
-
-/*
-@media screen and (max-width:500px){
-    
-    .edge-container > *{
-        flex-basis: 80%;
-       
-    }
-}*/
-
-
-/*figure,section,aside{
-    display:inline-block;
-}
-
-figure{
-    width:20%;
-    height:100%;
-}
-figcaption{
-    position:absolute;
-}
-img{
-    width:100%;
-    height:inherit;
-    
-}*/
-
-
-
-/*
-.edge-content{
-    width:70%;
-    padding:1rem;
-    background-color: brown;
-}
-
-section{
-    
-    box-shadow: 1px 1px 1px 1px black;
-    background-color: white;
-    text-align: center;
-    margin-bottom:1rem; 
-}
-img{
-    width:100px;
-    height:20vh;
-    
-}
-section{
-    width:30%;
-}
-figure,section,aside{
-    display:inline-block;
-    overflow:hidden;
-}
-
-
-figcaption{
-    position: absolute;
-    top:2rem;
-}
-
-*/
-
-
+/*MEDIA QUERIES*/
