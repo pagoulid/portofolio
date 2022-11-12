@@ -106,14 +106,15 @@ main .main-container{
     display:grid;
    grid-template-columns: repeat(3,25%);
    gap:2vh;
-
+   justify-content: center;
+   justify-items: center;
    padding:8vw;
    /*padding-left:15vw;*/
       
 }
 .main-grid-item{
-    width:100%;
-    min-width:200px;
+    width:80%;
+    /*min-width:200px;*/
 }
 
 main .project-container{
@@ -258,8 +259,11 @@ footer ul{
         padding:5vw;
         margin-left:2px;
     }
-   
+    main .main-container{
+        grid-template-columns: repeat(3,50%);
+    }
     .main-grid-item{
+        width:180px;
         grid-column:2;
     }
     .skills-container .skills-card{
@@ -289,6 +293,9 @@ footer ul{
     section{
         padding:2vw;  
     }
+    main .main-container{
+        grid-template-columns: repeat(3,200px);
+    }
     /*main .main-container{
         padding:2vw;
     }
@@ -305,8 +312,6 @@ footer ul{
     main .main-container{
         padding:2vw;
     }
-    .main-grid-item{
-        grid-column:1;
-    }
+    
 }
 /*MEDIA QUERIES*/
