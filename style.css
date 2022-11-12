@@ -292,7 +292,9 @@ footer ul{
     main .main-container{
         padding:2vw;
     }
-
+    .main-grid-item{
+        grid-column:1;
+    }
     .skills-container .skills-card{
         margin-left: 0;
     }
