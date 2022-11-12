@@ -289,14 +289,24 @@ footer ul{
     section{
         padding:2vw;  
     }
+    /*main .main-container{
+        padding:2vw;
+    }
+    .main-grid-item{
+        grid-column:1;
+    }*/
+    .skills-container .skills-card{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:300px){
+
     main .main-container{
         padding:2vw;
     }
     .main-grid-item{
         grid-column:1;
-    }
-    .skills-container .skills-card{
-        margin-left: 0;
     }
 }
 /*MEDIA QUERIES*/
