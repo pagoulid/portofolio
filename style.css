@@ -107,8 +107,8 @@ main .main-container{
    grid-template-columns: repeat(3,25%);
    gap:2vh;
 
-   padding-top:5vw;
-   padding-left:15vw;
+   padding:8vw;
+   /*padding-left:15vw;*/
       
 }
 .main-grid-item{
@@ -260,7 +260,7 @@ footer ul{
     }
    
     .main-grid-item{
-        grid-column:1;
+        grid-column:2;
     }
     .skills-container .skills-card{
         flex-direction: column;
@@ -288,6 +288,9 @@ footer ul{
 
     section{
         padding:2vw;  
+    }
+    main .main-container{
+        padding:2vw;
     }
 
     .skills-container .skills-card{
