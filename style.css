@@ -88,10 +88,14 @@ figure{
     position:relative;
 }
 
+
 figcaption{
     position:absolute;
     font-size: medium;
     color: white;
+}
+main figure{
+    height:5rem;
 }
 /* TOP-BOTTOM CONTAINERS*/
 
@@ -164,7 +168,7 @@ main .project-container{
 .side-progress{
 
     width: 100%;
-    max-width: 260px;
+    /*max-width: 260px;*/
     height: 6px;
     background: #e1e4e8;
     border-radius: 3px;
@@ -281,7 +285,13 @@ footer ul{
     }
     .skills-container .skills-card{
         flex-direction: column;
-        margin-left: 30%;
+        width:80%;
+        /*margin-left: 30%;*/
+    }
+    .skills-card li{
+        width:80%;
+        margin:inherit;
+        text-align:center;
     }
     
     
@@ -315,15 +325,19 @@ footer ul{
     .main-grid-item{
         grid-column:1;
     }*/
-    .skills-container .skills-card{
+    /*.skills-container .skills-card{
         margin-left: 0;
-    }
+    }*/
 }
 
 @media screen and (max-width:300px){
 
     main .main-container{
         padding:2vw;
+    }
+
+    .skills-card li{
+        width:100%;
     }
     
 }
