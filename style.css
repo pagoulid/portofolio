@@ -168,8 +168,8 @@ main .project-container{
 }
 .project-container .project-header{
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
+    /*justify-content:center;*/
     gap:1rem;
 }
 .project-container .project-content{
@@ -276,6 +276,9 @@ footer .footer-icons{
         width:180px;
         border-radius: 100px; 
     }
+    header .card{
+        margin-top:5vh;
+    }
     header section{
         padding:2vw;  
     }
@@ -302,5 +305,8 @@ footer .footer-icons{
     main .main-container{
         padding:2vw;
     }  
+    .main-grid-item{
+        width:70%;
+    }
 }
 /*MEDIA QUERIES*/
