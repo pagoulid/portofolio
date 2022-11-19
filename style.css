@@ -65,11 +65,13 @@ header img{
 .skills-container{
    
     background-color: navy;
+    overflow:hidden;
 }
 .skills-card li{
     flex-grow:1;
 }
 .skills-container h2{
+    margin-top:1rem;
     color:white;
     text-align: center;
 }
@@ -196,6 +198,7 @@ main .project-container{
 /*FOOTER SECTION*/
 footer{
     background-color: navy;
+    padding-top:auto;
 }
 footer ul{
     margin-top:10px;
@@ -209,10 +212,12 @@ footer p, footer i{
     color:white;
 }
 footer img{
-    width:50vh;
+    width:20vw;
 }
 footer>.edge-container{
     gap:15vw;
+    margin-top: 2vh;
+    
 }
 footer .footer-icons{
     display:flex;
@@ -278,6 +283,7 @@ footer .footer-icons{
     }
     header .card{
         margin-top:5vh;
+        width:80vw;
     }
     header section{
         padding:2vw;  
@@ -310,3 +316,9 @@ footer .footer-icons{
     }
 }
 /*MEDIA QUERIES*/
+@media screen and (min-height:1000px){
+    footer>.edge-container{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+}
