@@ -49,7 +49,7 @@ header section,main .project-container{
 
 /*HEADER SECTION*/
 header{
-    background: url(./img/background/daniel-fazio-unsplash.jpg) ;
+    background: url(https://img.freepik.com/free-photo/desk-workspace-with-various-elements_23-2148043274.jpg?t=st=1737992365~exp=1737995965~hmac=3d262c9eda8d7fc516a5cb47dfe7cc9512f7f9e40e87f7e8580b18288986b245&w=900) /*url(./img/background/daniel-fazio-unsplash.jpg)*/ ;
     background-size: cover;
    
 }
@@ -147,8 +147,8 @@ header .name{
 
 /*MAIN SECTION*/
 main{
-    background: url(./img/background/main-background.jpg) ;
-    background-size: cover; 
+   /* background: url(./img/background/main-background.jpg) ;
+    background-size: cover;*/ 
     min-height:50%;
 }
 main h4{
@@ -161,6 +161,8 @@ main figure{
     height:5rem;
 }
 main .main-container{
+   background:url(https://static.vecteezy.com/system/resources/previews/008/680/961/non_2x/abstract-technology-background-free-vector.jpg)  /*url(./img/background/main-background.jpg)*/ ;
+   background-size: cover;
    display:grid;
    grid-template-columns: repeat(3,25%);
    gap:2vh;
