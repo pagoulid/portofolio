@@ -29,6 +29,10 @@ header,footer{
     text-align: center;
     overflow-y:hidden ; /* to hide margin-collapse from child positioning*/
 }
+.section.about{ padding:0.75rem; }
+.content.about li{
+    margin:0.5rem 0;
+}
 .edge-container{ /*Containers for header/footer*/
     width:70%;
     display: flex;
@@ -53,11 +57,17 @@ header .bckrnd-color{
     background: rgba(25, 60, 186, 0.564);
     background-size: cover;
     min-height:25vh;
+    padding:2rem 0;
 }
 header img{
 
     width:150px; 
     border-radius: 10px;   
+}
+header .name{
+    margin-bottom:1rem;
+    color:white;
+    font-weight:bold;
 }
 /*HEADER SECTION*/
 
