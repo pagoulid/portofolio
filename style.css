@@ -49,15 +49,16 @@ header section,main .project-container{
 
 /*HEADER SECTION*/
 header{
-    background: url(./img/background/daniel-fazio-unsplash.jpg) ;
+    background: url(https://img.freepik.com/free-photo/desk-workspace-with-various-elements_23-2148043274.jpg?t=st=1737992365~exp=1737995965~hmac=3d262c9eda8d7fc516a5cb47dfe7cc9512f7f9e40e87f7e8580b18288986b245&w=900) /*url(./img/background/daniel-fazio-unsplash.jpg)*/ ;
     background-size: cover;
    
 }
+header .bckrnd-color, .skills-container{ padding:2rem 0; }
 header .bckrnd-color{
     background: rgba(25, 60, 186, 0.564);
     background-size: cover;
     min-height:25vh;
-    padding:2rem 0;
+    
 }
 header img{
 
@@ -78,7 +79,8 @@ header .name{
     overflow:hidden;
 }
 .skills-card li{
-    flex-grow:1;
+    /*flex-grow:1;*/
+    width:45%;
 }
 .skills-container h2{
     margin-top:1rem;
@@ -92,6 +94,9 @@ header .name{
 .skills-container .skills-card{
     display:flex;
     flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    width:75%;
     padding:1rem;
     gap:5px;
     margin:auto;
@@ -112,18 +117,20 @@ header .name{
     background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
 }
-.bar-1{
-    width:50%;
-}
-.bar-2{
-    width:75%;
-}
-.bar-3{
-    width:92%;
-}
-.bar-4{
-    width:30%;
-}
+
+.bar.html{ width:95%;}
+.bar.css{ width:75%;}
+.bar.javascript{ width:88%;}
+.bar.typescript{ width:75%;}
+.bar.php{ width:92%;}
+.bar.node{ width:80%;}
+.bar.wordpress{ width:50%;}
+
+.bar.python{ width:90%;}
+.bar.react{ width:75%;}
+.bar.cplus{ width:45%;}
+.bar.sql{ width:50%;}
+.bar.docker{ width:50%;}
     
 @keyframes progress-animation{
     0%{
@@ -140,8 +147,8 @@ header .name{
 
 /*MAIN SECTION*/
 main{
-    background: url(./img/background/main-background.jpg) ;
-    background-size: cover; 
+   /* background: url(./img/background/main-background.jpg) ;
+    background-size: cover;*/ 
     min-height:50%;
 }
 main h4{
@@ -154,6 +161,8 @@ main figure{
     height:5rem;
 }
 main .main-container{
+   background:url(https://static.vecteezy.com/system/resources/previews/008/680/961/non_2x/abstract-technology-background-free-vector.jpg)  /*url(./img/background/main-background.jpg)*/ ;
+   background-size: cover;
    display:grid;
    grid-template-columns: repeat(3,25%);
    gap:2vh;
